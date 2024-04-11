@@ -1,35 +1,22 @@
-import "./App.css";
+import { Suspense } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import routes from "./router/index.tsx";
 
 function App() {
   return (
-    <div className="app">
-      <Text></Text>
-      <HelloWorld></HelloWorld>
-      <TodoList></TodoList>
-    </div>
-  );
-}
-function HelloWorld() {
-  const text = "zara";
-  return (
-    <div className="hello-world">
-      {text}
-      The past is irreparable, the future can be changed
-    </div>
-  );
-}
-function Text() {
-  return (
-    <div>
-      <div>过去无法挽回，未来可以改变</div>
-    </div>
-  );
-}
-function TodoList() {
-  return (
-    <div>
-      <div>今日待办</div>
-    </div>
+    <Suspense fallback={<div>1111</div>}>
+      <BrowserRouter>
+        {
+          //遍历配置文件，生成路由列表 
+          routes.map((route) => {
+            return (
+              //路由配置中的全部属性作为Route的属性 
+              <Route {...route} />
+            );
+          })
+        }
+      </BrowserRouter>
+    </Suspense>
   );
 }
 
