@@ -1,22 +1,29 @@
-import { Suspense } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import routes from "./router/index.tsx";
+import Home from "./pages/home/index";
+import Layout from "./pages/layout/index";
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import Root from "./router/index.tsx";
+// import ErrorPage from "./error-page.tsx";
+
+import "./App.css";
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Root />,
+//     errorElement: <ErrorPage />,
+//   },
+// ]);
 
 function App() {
   return (
-    <Suspense fallback={<div>1111</div>}>
-      <BrowserRouter>
-        {
-          //遍历配置文件，生成路由列表 
-          routes.map((route) => {
-            return (
-              //路由配置中的全部属性作为Route的属性 
-              <Route {...route} />
-            );
-          })
-        }
-      </BrowserRouter>
-    </Suspense>
+    <div className="app">
+      {/* <RouterProvider router={router} /> */}
+      <div className="app_menu">
+        <Layout></Layout>
+      </div>
+      <div className="app_content">
+        <Home></Home>
+      </div>
+    </div>
   );
 }
 

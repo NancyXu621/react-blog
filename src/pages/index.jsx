@@ -1,7 +1,7 @@
 export default function myFunction() {
     return (
         <div>
-            vip 
+            vip + bigbang
         </div>
     )
 }

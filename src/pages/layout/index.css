@@ -1,0 +1,9 @@
+.menu {
+    background: #fff;
+    height: 100%;
+    text-align: center;
+}
+
+.menu_item {
+    padding: 16px 0;
+}
