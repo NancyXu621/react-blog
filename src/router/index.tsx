@@ -1,19 +1,15 @@
-export default function Root() {
+// Routes.tsx
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Home from "../pages/home/index";
+import SetUp from "../pages/setup/index";
+const Routes: React.FC = () => {
   return (
-    <>
-      <div id="sidebar">
-        <h1>React Router Contacts</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href={`/contacts/1`}>Your Name</a>
-            </li>
-            <li>
-              <a href={`/contacts/2`}>Your Friend</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </>
+    <Switch>
+      <Route path="/" Component={Home} />
+      <Route path="/setup" Component={SetUp} />
+    </Switch>
   );
-}
+};
+
+export default Routes;

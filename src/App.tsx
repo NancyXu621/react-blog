@@ -1,30 +1,16 @@
-import Home from "./pages/home/index";
-import Layout from "./pages/layout/index";
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import Root from "./router/index.tsx";
-// import ErrorPage from "./error-page.tsx";
+// App.tsx
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./router/index";
 
-import "./App.css";
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Root />,
-//     errorElement: <ErrorPage />,
-//   },
-// ]);
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="app">
-      {/* <RouterProvider router={router} /> */}
-      <div className="app_menu">
-        <Layout></Layout>
-      </div>
-      <div className="app_content">
-        <Home></Home>
-      </div>
+    <div className="App">
+      <Router>
+        <Routes />
+      </Router>
     </div>
   );
-}
+};
 
 export default App;

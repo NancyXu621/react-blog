@@ -3,7 +3,7 @@ import "./index.css";
 function Layout() {
   let list = [
     {
-      path: "Home",
+      path: "home",
       name: "首页",
     },
     {
@@ -32,7 +32,7 @@ function Layout() {
       {list.map((item, key) => {
         return (
           <div className="menu_item" key={key}>
-            {item.name} + {item.path}
+            <a href={item.path}> {item.name}</a>
           </div>
         );
       })}

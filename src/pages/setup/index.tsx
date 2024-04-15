@@ -1,4 +1,4 @@
 function SetUp() {
-  return <div>2222 </div>;
+  return <div> 文章2 </div>;
 }
 export default SetUp;
