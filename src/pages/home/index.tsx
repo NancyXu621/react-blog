@@ -19,9 +19,6 @@ let textList: Array<any> = ([] = [
     title: "关于js的语法",
     icon: 4,
   },
-  {
-    title: "《我叫简夹克》，舍不得吃的鸡蛋坏了，最后都喂给了枣树和桃树。",
-  },
 ]);
 
 function LevelContext({ title, icon }: LevelContextProps) {
@@ -51,7 +48,7 @@ function BlackHome() {
 }
 /**
  * 点击
- * @param type 
+ * @param type
  */
 function Open(type: any) {
   if (type == "1") {

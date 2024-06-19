@@ -27,12 +27,16 @@ function Layout() {
       name: "关于",
     },
   ];
+  const onClick = () => {
+    console.log("click");
+  };
   return (
     <div className="menu">
       {list.map((item, key) => {
         return (
           <div className="menu_item" key={key}>
             <a href={item.path}> {item.name}</a>
+            <button onClick={onClick}>111</button>
           </div>
         );
       })}
