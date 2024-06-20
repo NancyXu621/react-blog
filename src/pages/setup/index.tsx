@@ -1,4 +1,14 @@
 function SetUp() {
-  return <div> 文章2 </div>;
+  return (
+    <div>
+      <div>文章</div>
+      <div></div>
+    </div>
+  );
 }
+SetUp.getInitialProps = async () => {
+  return {
+    title: "SetUp",
+  };
+};
 export default SetUp;

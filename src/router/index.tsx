@@ -7,6 +7,7 @@ import SetUp from "../pages/setup/index";
 const routes = [
   { path: "/", component:Home },
   { path: "/setup", component: SetUp },
+  
   // { path: "*", component: Home }
 ];
 /**
