@@ -2,18 +2,19 @@
   width: 100%;
   height: 100%;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.app_menu {
-  width: 3.75rem;
+.Header {
+  padding: 12px 0;
+  color: #fff;
+  background: #2f2f2f;
+  text-align: center;
+}
+
+.Content {
   height: 100%;
   display: flex;
-  flex-direction: column;
-}
-
-.app_content {
-  width: 100%;
-  height: 100%;
-  margin: .75rem;
+  flex-direction: row;
 }
