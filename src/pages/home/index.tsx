@@ -5,6 +5,10 @@ let textList: Array<any> = ([] = [
     title: "照片墙",
     icon: "更新",
   },
+  {
+    title: "文章列表",
+    iocn: "write",
+  },
 ]);
 
 function Home(): JSX.Element {
@@ -30,15 +34,14 @@ function Home(): JSX.Element {
   }
   return (
     <div className="home-content">
-      {count}
+      <div></div>
       {textList.map((item, index) => {
         return (
           <div key={index} className="home">
             <span>{item.icon}</span>
             <span>{item.title}</span>
             <button onClick={() => Open(item)}>打卡</button>
-            <button onClick={() => Update(item)}>更新</button>
-            {/* app.tsx */}
+            <button onClick={() => Update(item)}>更新数据</button>
           </div>
         );
       })}
