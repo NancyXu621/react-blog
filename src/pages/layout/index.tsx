@@ -1,38 +1,15 @@
 import "./index.css";
+import routes from "../../router/index";
 
 function Layout() {
-  let list = [
-    {
-      path: "Home",
-      name: "首页",
-    },
-    {
-      path: "writing",
-      name: "文章",
-    },
-    {
-      path: "Travel",
-      name: "旅游",
-    },
-    {
-      path: "Music",
-      name: "音乐",
-    },
-    {
-      path: "Setup",
-      name: "设置",
-    },
-    {
-      path: "About",
-      name: "关于",
-    },
-  ];
   return (
     <div className="menu">
-      {list.map((item, key) => {
+      {routes.map((item, key) => {
         return (
-          <div className="menu_item" key={key}>
-            <a href={item.path}> {item.name}</a>
+          <div className="menu_item" key={key} onClick={() => {}}>
+            <a className="a" href={item.path}>
+              {item.name} 
+            </a>
           </div>
         );
       })}

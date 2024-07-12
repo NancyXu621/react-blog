@@ -8,12 +8,12 @@ import Travel from "../pages/Travel/index";
 import Music from "../pages/Music/index";
 import About from "../pages/About/index";
 const routes = [
-  { path: "/Home", component: Home },
-  { path: "/setup", component: SetUp },
-  { path: "/Writing", component: Writing },
-  { path: "/Travel", component: Travel },
-  { path: "/Music", component: Music },
-  { path: "/About", component: About}
+  { name: "首页", path: "/Home", component: Home },
+  { name: "设置", path: "/setup", component: SetUp },
+  { name: "写作", path: "/Writing", component: Writing },
+  { name: "旅游地点", path: "/Travel", component: Travel },
+  { name: "音乐", path: "/Music", component: Music },
+  { name: "关于", path: "/About", component: About },
 ];
 /**
  * @opptoom
