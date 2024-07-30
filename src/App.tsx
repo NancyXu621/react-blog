@@ -7,7 +7,6 @@ import Layout from "./pages/layout/index";
 function App() {
   return (
     <div className="App">
-      <div className="Header">Nancy</div>
       <div className="Content">
         <Layout></Layout>
         <Routes>
