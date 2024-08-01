@@ -1,7 +1,6 @@
+import "./index.css";
 export function About() {
-    return (
-        <div>关于我们</div>
-    )
+  return <div className="about">关于我们</div>;
 }
 
 export default About;

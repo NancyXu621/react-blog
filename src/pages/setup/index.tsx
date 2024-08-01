@@ -1,6 +1,7 @@
+import "./index.css";
 function SetUp() {
   return (
-    <div>
+    <div className="setup">
       <div>文章</div>
       <div></div>
     </div>

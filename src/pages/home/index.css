@@ -4,3 +4,10 @@
     background: #fff;
     padding: 12px;
 }
+
+.home-header-box {
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #bebebe;
+    border-radius: 10px
+}

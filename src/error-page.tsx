@@ -7,10 +7,8 @@ interface ErrorInfo {
 
 export default function ErrorPage() {
   const error: ErrorInfo = useRouteError();
-
   // 提供一个更具描述性的错误消息
   const errorMessage = `Error ${error.statusText || error.message}`;
-
   return (
     <div id="error-page">
       <h1>Oops!</h1>
