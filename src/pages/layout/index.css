@@ -1,8 +1,8 @@
 .menu {
-    background: #2f2f2f;
-    height: 100%;
-    text-align: center;
     width: 72px;
+    height: 100%;
+    background: #2f2f2f;
+    text-align: center;
 }
 
 .menu_item {
@@ -20,4 +20,10 @@
     &:hover {
         color: #fff;
     }
+}
+
+.home-content {
+    width: 100%;
+    height: 100%;
+    background: #fff;
 }
