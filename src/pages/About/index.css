@@ -4,3 +4,15 @@
     background: #fff;
     padding: 12px;
 }
+
+.about-content {
+    display: flex;
+}
+
+.about-footer {
+    display: flex;
+}
+
+.about-footer-item {
+    padding: 0 12px;
+}
