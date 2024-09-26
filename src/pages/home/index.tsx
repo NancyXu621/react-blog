@@ -1,29 +1,45 @@
 import "./index.css";
-const homeInfo = {};
+const homeInfo = [
+  {
+    title: "关于我",
+    content: "我是一名前端开发工程师，热爱编程，喜欢挑战自我，追求卓越。",
+  },
+  {
+    title: "我的技能",
+    content: "熟悉HTML、CSS、JavaScript，了解React、Vue等前端框架，熟悉Node.js后端开发。",
+  },
+  {
+    title: "我的项目",
+    content: "参与开发多个前端项目，包括电商平台、企业官网等。",
+  },
+  {
+    title: "我的经历",
+    content: "曾在多家互联网公司实习，积累了丰富的项目经验。",
+  },
+  {
+    title: "我的联系方式",
+    content: "邮箱：3219872797@qq.com",
+  }
+];
 
 function Home(): JSX.Element {
   return (
     <div className="home-content">
-      {/* <div className="home-header-box">
-        <div className="home-content-right">过去无法挽回，未来可以改变</div>
-      </div> */}
+      <div className="home-header-box">
+        <div className="home-header-left-box">
+          <div className="home-content-title">XU NANCY</div>
+          <div className="home-content-p">过去无法挽回，未来可以改变</div>
+        </div>
+      </div>
       <div className="home-content-box">
-        <div className="home-content-left">
-          <h1 className="home-content-left-title">Nancy</h1>
+        <div className="home-content-right">
+        <div className="home-content-right—title">过去无法挽回，未来可以改变</div>
+          <div>
+            <input placeholder="搜索"></input>
+          </div>
         </div>
         <div className="home-content-left">
-          <div className="home-content-left-box">
-            <h2 className="home-content-left-box-title">关于Nancy</h2>
-            <p>主页：http://Nancy.com</p>
-            <p>邮箱：3219872797@qq.com</p>
-            <p>代码库：https://github.com/NancyXu621</p>
-            <p>
-              大家好，我叫简夹克，英文名XuNancy。在是一位码农前我是搞艺术的学设计的。大学专业学的有两个方向，一是UI设计师方向跟现在的工作有点关系吧，二是剪辑师方向，自导自剪了一个10分钟的微电影。
-              为什么当程序员这个说起来很突然，刚刚毕业的我非常非常迷茫，根本不知道应该干嘛。来到了杭州这座城市，所幸运的是我有两个互联网大佬的舅舅，因此在我两个舅舅的教学下，迈入了互联网。
-              关于我对互联网的个人感受是我觉得自己写一个大家都有的功能很酷很有成就感，最关键的是这行他钱真的多啊。再就是我的偶像马斯克的影响，我对互联网更加的热爱，希望有一天可以跟我的偶像
-              见面，一起做点事情。
-            </p>
-          </div>
+       
         </div>
       </div>
     </div>
